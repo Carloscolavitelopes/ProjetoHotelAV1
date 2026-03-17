@@ -1,0 +1,30 @@
+2026-03-17T00:15:52.410-03:00  INFO 3588 --- [hotelav1] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-17T00:15:52.456-03:00  INFO 3588 --- [hotelav1] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-17T00:15:52.478-03:00  INFO 3588 --- [hotelav1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-17T00:15:52.486-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists consumo cascade 
+2026-03-17T00:15:52.491-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists hospede cascade 
+2026-03-17T00:15:52.493-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pagamento cascade 
+2026-03-17T00:15:52.494-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists quarto cascade 
+2026-03-17T00:15:52.496-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade 
+2026-03-17T00:15:52.497-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists reserva_quarto cascade 
+2026-03-17T00:15:52.498-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_consumo
+2026-03-17T00:15:52.500-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_hospede
+2026-03-17T00:15:52.501-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pagamento
+2026-03-17T00:15:52.502-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_quarto
+2026-03-17T00:15:52.502-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2026-03-17T00:15:52.505-03:00 TRACE 3588 --- [hotelav1] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@34e74eda] for TypeConfiguration
+2026-03-17T00:15:52.506-03:00 DEBUG 3588 --- [hotelav1] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@54e46482] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@34e74eda]
+2026-03-17T00:15:52.517-03:00  WARN 3588 --- [hotelav1] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-03-17T00:15:52.517-03:00  INFO 3588 --- [hotelav1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-17T00:15:52.518-03:00  INFO 3588 --- [hotelav1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
